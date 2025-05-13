@@ -4,12 +4,7 @@ import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
 
-
-public interface IAcervoJpaItfRep extends CrudRepository<Livro,Long>{
-    List<Livro> findAll(); 
-    Livro findById(long id); 
+public interface IEditoraJpaItfRep extends CrudRepository<Editora, Long>{
+    List<Editora> findAll();
+    Editora findById(long id);
 }
-
-
-
-
